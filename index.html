@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercadinho do Gabs</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <img src="logo.png" alt="Logo Mercadinho do Gabs" class="logo">
+        
+        <div class="titulo">
+            <h1>Mercadinho do Gabs</h1>
+            <p>Produtos selecionados com qualidade premium</p>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section class="painel">
+        <label for="produto">Escolha um produto:</label>
+
+        <select id="produto">
+            <option value="">Selecione um produto</option>
+            <option value="arroz">Arroz</option>
+            <option value="macarrao">Macarrão</option>
+            <option value="feijao">Feijão</option>
+            <option value="sardinha">Sardinha</option>
+            <option value="suco">Suco</option>
+            <option value="refrigerante">Refrigerante</option>
+            <option value="extrato">Extrato de Tomate</option>
+            <option value="doce">Doce de Leite</option>
+        </select>
+
+        <div class="botoes">
+            <button onclick="verProduto()">Ver Produto</button>
+            <button class="secundario" onclick="limpar()">Limpar</button>
+        </div>
+    </section>
+
+    <section class="card">
+        <img id="imagem" src="supermercado.jpeg.webp" alt="Produto">
+
+        <h2 id="nome">Selecione um produto</h2>
+        <p id="descricao">Aqui aparecerá a descrição</p>
+        <p id="preco"></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Mercadinho do Gabs • Exclusividade, qualidade e sofisticação.</p>
+</footer>
+
+<script src="main.js" defer></script>
+
+</body>
+</html>

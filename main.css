@@ -167,3 +167,8 @@ footer {
     color: white;
     font-size: 14px;
 }
+
+.hidden {
+    position: absolute;
+    left: -9999px;
+}

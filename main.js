@@ -77,3 +77,5 @@ function limpar() {
     document.getElementById("preco").innerText = "";
     document.getElementById("imagem").src = "supermercado.jpeg.webp";
 }
+
+document.getElementById("ano").innerText = new Date().getFullYear();

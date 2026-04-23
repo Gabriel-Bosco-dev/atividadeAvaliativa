@@ -6,16 +6,15 @@
     <title>Mercadinho do Gabs</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
     <div class="header-container">
-        <img src="logo.png" alt="Logo Mercadinho do Gabs" class="logo">
-        
+        <img src="img/logo.svg" alt="Logo Mercadinho do Gabs" class="logo">
+
         <div class="titulo">
             <h1>Mercadinho do Gabs</h1>
             <p>Produtos selecionados com qualidade premium</p>
@@ -25,7 +24,10 @@
 
 <main>
 
+    <!-- SEÇÃO 1 -->
     <section class="painel">
+        <h2 class="hidden">Seleção de Produtos</h2>
+
         <label for="produto">Escolha um produto:</label>
 
         <select id="produto">
@@ -46,10 +48,13 @@
         </div>
     </section>
 
+    <!-- SEÇÃO 2 -->
     <section class="card">
-        <img id="imagem" src="supermercado.jpeg.webp" alt="Produto">
+        <h2 class="hidden">Detalhes do Produto</h2>
 
-        <h2 id="nome">Selecione um produto</h2>
+        <img id="imagem" src="img/supermercado.jpeg.webp" alt="Produto">
+
+        <h3 id="nome">Selecione um produto</h3>
         <p id="descricao">Aqui aparecerá a descrição</p>
         <p id="preco"></p>
     </section>
@@ -57,10 +62,10 @@
 </main>
 
 <footer>
-    <p>© 2026 Mercadinho do Gabs • Exclusividade, qualidade e sofisticação.</p>
+    <p>© <span id="ano"></span> Mercadinho do Gabs. Todos os direitos reservados.</p>
 </footer>
 
-<script src="main.js" defer></script>
+<script src="script.js" defer></script>
 
 </body>
 </html>
